@@ -1,7 +1,12 @@
 #Welcome to Lab 3, please answer the following questions
 
 #Install and require package MASS
+<<<<<<< HEAD
 
+=======
+require(MASS)
+require(dplyr)
+>>>>>>> lab 3
 
 #Using the built in dataset anorexia, aggregate the data to look at:
 #       1. the number of patients who received a treatment (choose one) who responded positively to treatment
@@ -10,7 +15,14 @@
 #       4. the number of patients who were in the control group who did not respond or responded negatively to treatment
 
 #Such that you end up with a 2 by 2 table
+<<<<<<< HEAD
 
+=======
+data <- mutate(anorexia, Diffwt = Postwt - Prewt)
+
+weight.increased <- filter(data, Diffwt > 0, Treat != "Cont")
+weight.decreased <- filter(data, Diffwt <= 0, Treat != "Cont")
+>>>>>>> lab 3
 
 #What kind of analysis appropriate to perform on a study like this?
 

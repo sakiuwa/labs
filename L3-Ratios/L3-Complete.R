@@ -1,6 +1,11 @@
 #Welcome to Lab 3, please answer the following questions
 
 #Install and require package MASS
+<<<<<<< HEAD
+=======
+install.packages("MASS")
+
+>>>>>>> lab 3
 library(MASS)
 library (dplyr)
 
